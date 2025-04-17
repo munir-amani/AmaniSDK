@@ -60,3 +60,7 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+/DerivedData
+.DS_Store
+Package.resolved
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
