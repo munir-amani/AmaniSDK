@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author       = "Amani"
   s.platform     = :ios, "13.0"
   s.static_framework = true
-  s.source       = { :http => "https://raw.githubusercontent.com/munir-amani/AmaniSDK-ios/refs/heads/main/Binaries/AmaniSDK.xcframework.zip" }
+  s.source       = { :git => "https://github.com/munir-amani/AmaniSDK-ios.git", tag: => s.version.to_s}
   # s.dependency 'Alamofire', '>=5.2'
   # s.dependency 'SwiftLint'
   # s.dependency 'IQKeyboardManagerSwift'
@@ -26,7 +26,8 @@ Pod::Spec.new do |s|
   s.dependency 'GMOpenSSL'
   s.xcconfig          = { 'OTHER_LDFLAGS' => '-weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit'}
   s.ios.deployment_target = '13.0'
-  s.vendored_frameworks = 'AmaniSDK.xcframework'
-  
+  s.vendored_frameworks = 'Binaries/AmaniSDK.xcframework'
+  s.preserve_paths      = 'Binaries/AmaniSDK.xcframework'
+
 
 end
