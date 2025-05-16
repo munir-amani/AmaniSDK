@@ -17,8 +17,7 @@ Pod::Spec.new do |s|
   s.license      = "Copyright"
   s.author       = "Amani"
   s.platform     = :ios, "13.0"
-  s.source       = { :path => "." }
-  s.source_files = "AmaniSDK/**/*.{h,m,swift,mlpackage,mlmodel}"
+  s.source       = { :path => "./Binaries/AmaniSDK.xcframework.zip" }
   # s.dependency 'Alamofire', '>=5.2'
   # s.dependency 'SwiftLint'
   # s.dependency 'IQKeyboardManagerSwift'
