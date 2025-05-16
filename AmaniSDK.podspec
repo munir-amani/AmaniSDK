@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author       = "Amani"
   s.platform     = :ios, "13.0"
   s.static_framework = true
-  s.source       = { :git => "https://github.com/munir-amani/AmaniSDK-ios.git", tag: => s.version.to_s }
+  s.source       = { :git => "https://github.com/munir-amani/AmaniSDK-ios.git", :tag => s.version.to_s }
   # s.dependency 'Alamofire', '>=5.2'
   # s.dependency 'SwiftLint'
   # s.dependency 'IQKeyboardManagerSwift'
