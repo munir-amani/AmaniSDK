@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.license      = "Copyright"
   s.author       = "Amani"
   s.platform     = :ios, "13.0"
+  s.static_framework = true
   s.source       = { :http => "https://raw.githubusercontent.com/munir-amani/AmaniSDK-ios/refs/heads/main/Binaries/AmaniSDK.xcframework.zip" }
   # s.dependency 'Alamofire', '>=5.2'
   # s.dependency 'SwiftLint'
